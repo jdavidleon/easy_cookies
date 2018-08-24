@@ -132,17 +132,6 @@
 			return false;
 		}
 
-		public static function agregarEnVistos($productoID)
-		{
-            $data = [
-            		[
-            		'id_producto' => $productoID,
-            		'date_ls_vistos' => date("Y-m-d H:i:s")
-            		]
-            	];
-
-            return self::insertInCookie('rce_vis',$data,258000,'id_producto');
-		}
 	}
 
 
